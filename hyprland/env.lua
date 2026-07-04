@@ -18,6 +18,8 @@ hl.env("ELECTRON_OZONE_PLATFORM_HINT", "auto")
 hl.env("XDG_CURRENT_DESKTOP", "Hyprland")
 hl.env("XDG_SESSION_TYPE", "wayland")
 hl.env("XDG_SESSION_DESKTOP", "Hyprland")
+    -- Hyprland fix
+    hl.env("XDG_DESKTOP_PORTAL_HYPRLAND_FORCE_SHM", "1")
 
 -- Others
 hl.env("_JAVA_AWT_WM_NONREPARENTING", "1")
