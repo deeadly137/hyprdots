@@ -141,7 +141,7 @@ hl.bind(vars.kbSteam, hl.dsp.exec_cmd("steam"))
 
 -- Utilities
 hl.bind("Print", hl.dsp.exec_cmd("caelestia screenshot"), { locked = true })
-hl.bind("SUPER + SHIFT + S", hl.dsp.global("caelestia:screenshotFreeze"))
+hl.bind("SUPER + SHIFT + S", hl.dsp.global("caelestia:screenshot"))
 hl.bind("SUPER + SHIFT + ALT + S", hl.dsp.global("caelestia:screenshot"))
 hl.bind("SUPER + ALT + R", hl.dsp.exec_cmd("caelestia record -s"))
 hl.bind("CTRL + ALT + R", hl.dsp.exec_cmd("caelestia record"))
