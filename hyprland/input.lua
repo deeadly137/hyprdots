@@ -15,6 +15,10 @@ hl.config({
             scroll_factor        = vars.touchpadScrollFactor,
         },
     },
+hl.device({
+    name = "wacom-one-by-wacom-s-pen",
+    output = "eDP-1"
+}),
 
     binds = {
         scroll_event_delay = 0,
