@@ -98,7 +98,7 @@ return {
     kbEditor                   = "SUPER + C",
     kbFileExplorer             = "SUPER + E",
     kbDiscord                  = "SUPER + D",
-    kbSteam                    = "SUPER + S",
+    kbSteam                    = "SUPER + ALT + S",
 
     -- Misc
     kbSession                  = "CTRL + ALT + Delete",

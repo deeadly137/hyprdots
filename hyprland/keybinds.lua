@@ -68,8 +68,8 @@ hl.bind("CTRL + SUPER + SHIFT + right", hl.dsp.window.move({ workspace = "+1" })
 hl.bind("CTRL + SUPER + SHIFT + left", hl.dsp.window.move({ workspace = "-1" }), { repeating = true })
 
 -- Move window to/from special workspace
--- hl.bind("CTRL + SUPER + SHIFT + up", hl.dsp.window.move({ workspace = "special:special" }))
-hl.bind("CTRL + SUPER + SHIFT + down", hl.dsp.window.move({ workspace = "e+0" }))
+hl.bind("SUPER + up", hl.dsp.window.move({ workspace = "special:special" }))
+hl.bind("SUPER + down", hl.dsp.window.move({ workspace = "e+0" }))
 -- hl.bind("SUPER + ALT + S", hl.dsp.window.move({ workspace = "special:special" }))
 
 -- Window groups
@@ -88,8 +88,8 @@ hl.bind("SUPER + up", hl.dsp.focus({ direction = "up" }))
 hl.bind("SUPER + down", hl.dsp.focus({ direction = "down" }))
 hl.bind("SUPER + SHIFT + left", hl.dsp.window.move({ direction = "left" }))
 hl.bind("SUPER + SHIFT + right", hl.dsp.window.move({ direction = "right" }))
-hl.bind("SUPER + SHIFT + up", hl.dsp.window.move({ direction = "up" }))
-hl.bind("SUPER + SHIFT + down", hl.dsp.window.move({ direction = "down" }))
+-- hl.bind("SUPER + SHIFT + up", hl.dsp.window.move({ direction = "up" }))
+-- hl.bind("SUPER + SHIFT + down", hl.dsp.window.move({ direction = "down" }))
 hl.bind("SUPER + Minus", hl.dsp.window.resize(fn.resize_active_window(-10, 0)), { repeating = true })
 hl.bind("SUPER + Equal", hl.dsp.window.resize(fn.resize_active_window(10, 0)), { repeating = true })
 hl.bind("SUPER + SHIFT + Minus", hl.dsp.window.resize(fn.resize_active_window(0, -10)), { repeating = true })
@@ -127,7 +127,7 @@ hl.bind(vars.kbCloseWindow, hl.dsp.window.close())
 -- Special workspace toggles
 -- hl.bind(vars.kbSpecialWs, hl.dsp.exec_cmd("caelestia toggle specialws"))
 hl.bind(vars.kbSystemMonitorWs, hl.dsp.exec_cmd("caelestia toggle sysmon"))
-hl.bind(vars.kbMusicWs, hl.dsp.exec_cmd("caelestia toggle music"))
+-- hl.bind(vars.kbMusicWs, hl.dsp.exec_cmd("caelestia toggle music"))
 hl.bind(vars.kbCommunicationWs, hl.dsp.exec_cmd("caelestia toggle communication"))
 -- hl.bind(vars.kbTodoWs, hl.dsp.exec_cmd("caelestia toggle todo"))
 
@@ -140,8 +140,8 @@ hl.bind("CTRL + ALT + V", hl.dsp.exec_cmd(vars.audioSettings))
 hl.bind(vars.kbSteam, hl.dsp.exec_cmd("steam"))
 
 -- Utilities
-hl.bind("Print", hl.dsp.exec_cmd("caelestia screenshot"), { locked = true })
-hl.bind("SUPER + SHIFT + S", hl.dsp.global("caelestia:screenshot"))
+hl.bind("SUPER + SHIFT + S", hl.dsp.exec_cmd("caelestia screenshot"), { locked = true })
+hl.bind("Print", hl.dsp.global("caelestia:screenshot"))
 hl.bind("SUPER + SHIFT + ALT + S", hl.dsp.global("caelestia:screenshot"))
 hl.bind("SUPER + ALT + R", hl.dsp.exec_cmd("caelestia record -s"))
 hl.bind("CTRL + ALT + R", hl.dsp.exec_cmd("caelestia record"))
